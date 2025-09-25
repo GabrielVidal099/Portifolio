@@ -1,0 +1,305 @@
+
+/* estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.interface{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+.flex{
+    display: flex;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(255, 0, 0);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+h2.titulo{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+h2.titulo span{
+    color: red;
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px;
+    color: rgb(255, 91, 91);
+    transform: scale(1.05);
+}
+
+/* estilo cabeçario */
+header{
+    padding: 40px 4%;
+    cursor: default;
+}
+
+
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: rgb(255, 83, 83);
+    text-decoration: none;
+    display: inline-block;
+    
+}
+header a:hover{
+    color: rgb(252, 252, 252);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* topo site */
+
+ section.topo-do-site{
+    padding: 40px 4%;
+
+ }
+ section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+ }
+ .topo-do-site h1{
+    color: white;
+    font-size: 45px;
+    line-height: 42px
+ }
+ .topo-do-site p{
+    color: white;
+    line-height: 20px;
+    margin: 40px 0;
+ }
+  .topo-do-site .txt-topo-site p span{
+    color: red;
+  }
+
+  .topo-do-site .img-topo-site img{
+     position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    height: 500px;
+  }
+
+  @keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+  }
+  /* estilos especialidades */
+section.especialidades{
+padding: 40px 4%;
+  }
+
+  section.especialidades .flex{
+    gap: 60px;
+
+  }
+
+.especialidades .especialiades-box{
+    color: white;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: .2s;
+    ;
+}
+.especialidades .especialiades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0  0 25px #ff00007e;
+
+
+}
+.info{
+    color: red;
+    font-size: 45px;
+    margin: 15px 0;
+    display: flex;
+    gap: 12px;
+    cursor: default;
+}
+.especialidades .especialiades-box p{
+    font-size: 20px;
+    cursor: default;
+    
+}
+.especialidades .especialiades-box p span{
+    color: red;
+}
+section.sobre{
+    padding: 40px 4%;
+
+}
+
+section.sobre .flex{
+    gap: 60px;
+}
+.sobre .txt-sobre{
+    color: white;
+    
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+}
+.sobre .txt-sobre h2 span{
+    color: red;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 24px 0;
+}
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 15px;
+    background-color: black;
+    transition: .2s;
+}
+.btn-social button:hover{
+     box-shadow: 0  0 25px #ff0000af;
+    transform: scale(1.10);
+}
+.btn-social{
+    cursor: default;
+    
+}
+
+/* ESTILO PORTI */
+section.projeto{
+    padding: 40px 4%;
+     box-shadow: 0 0 20px 10px  #ff00003d;
+}
+section.projeto .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.img-port{
+    width: 320px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+     border-radius: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 30px;
+     font-weight: 600;
+     background-color: rgba(0, 0, 0, 0.63);
+     color: rgb(255, 255, 255);
+     opacity: 0;
+     transition: .6s;
+     
+
+}
+
+.img-portifolio{
+    width: 320px;
+    height: 460px;
+    background-color: rgba(255, 0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.portifolio .projetos{
+    color: white;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: .2s;
+}
+.portifolio .projetos h3{
+    font-size: 40px;
+}
+    /*rodape  */
+footer{
+    padding: 40px 4%
+}
+footer .flex{
+    justify-content: space-between;
+}
+footer .line-footer{
+    padding: 20px 0;
+
+}
+.borda{
+    border-top: 2px solid red;
+}
+footer .line-footer p{
+    text-decoration: none;
+    color: aliceblue;
+}
+footer .line-footer a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    
+}
+
+
+

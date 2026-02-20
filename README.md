@@ -22,16 +22,6 @@ Focado em transformar linhas de código em soluções inovadoras e em constante 
 
 ---
 
-### 📊 Minhas Estatísticas no GitHub
-
-Aqui você pode ver um resumo do meu impacto e das linguagens que mais utilizo:
-
-<p align="left">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=GabrielVidal099&show_icons=true&theme=radical&include_all_commits=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GabrielVidal099&layout=compact&langs_count=7&theme=radical" />
-</p>
-
----
 
 ### 📫 Vamos nos conectar?
 
